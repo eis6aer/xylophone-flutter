@@ -14,6 +14,7 @@ class XylophoneApp extends StatelessWidget {
   Widget buildKey(Color color, int soundNumber) {
     return Expanded(
       child: FlatButton(
+        child: null,
         onPressed: () {
           playSound(soundNumber);
         },
@@ -46,20 +47,3 @@ class XylophoneApp extends StatelessWidget {
     );
   }
 }
-
-class Player extends StatefulWidget {
-  @override
-  _PlayerState createState() => _PlayerState();
-}
-
-class _PlayerState extends State<Player> {
-  @override
-  Widget build(BuildContext context) {
-    void playFile() {
-
-    }
-
-    return Container();
-  }
-}
-
